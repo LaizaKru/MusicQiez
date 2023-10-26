@@ -1,0 +1,1 @@
+module.exports = [{title: 'RAP', img:'https://yt3.googleusercontent.com/ytc/AGIKgqNlrLkqUpWGWmN38UE3mo29WPFq17xc_2nCBn1b=s900-c-k-c0x00ffffff-no-rj'},{title:'Russians народные', img:'https://1.bp.blogspot.com/-BQt4wMABOYk/T8HR9xJfhKI/AAAAAAAAIN8/ZMlC9ea1IeI/s1600/buranovskiebabushki_04.jpg'},{title: 'Rock', img:'https://ntv-static.cdnvideo.ru/home/news/20141006/cc_vs.jpg'}]
