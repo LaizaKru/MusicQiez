@@ -13,7 +13,7 @@ function Main({ title }) {
           <a
             href="/register"
             className="btn btn-danger mb-2"
-            style={{ background: "#ffff", borderColor: "#a44e6b" }}
+            style={{ background: "b", borderColor: "#a44e6b", color: "black" }}
           >
             <h2>Зарегестрируйтесь, чтобы начать игру</h2>
           </a>
