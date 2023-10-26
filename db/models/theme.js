@@ -14,8 +14,12 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Theme.init({
-    title: DataTypes.TEXT,
-    img: DataTypes.TEXT
+    title: {
+      type: DataTypes.TEXT
+    },
+    img: {
+      type: DataTypes.TEXT
+    }
   }, {
     sequelize,
     modelName: 'Theme',
