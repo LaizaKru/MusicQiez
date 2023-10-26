@@ -7,26 +7,39 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
+    static associate(Theme) {
+      this.belongsTo(Theme, {
+        foreignKey: "themeId",
+      });
       // define association here
     }
   }
   Question.init(
     {
       answer: {
-        type: Sequelize.TEXT,
+        type: DataTypes.TEXT,
+        allowNull: false,
       },
       question: {
-        type: Sequelize.TEXT,
+        type: DataTypes.TEXT,
+        allowNull: false,
       },
       img: {
-        type: Sequelize.TEXT,
+        type: DataTypes.TEXT,
+        allowNull: false,
       },
       themeId: {
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+          model: "Themes",
+          key: "id",
+        },
+        onDelete: "CASCADE",
       },
       url: {
-        type: Sequelize.TEXT,
+        type: DataTypes.TEXT,
+        allowNull: false,
       },
     },
     {
