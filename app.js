@@ -6,7 +6,6 @@ const app = express();
 // const parsers = require("body-parser");
 // app.use(parsers.json());
 
-app.locals.user = 'Лиза'; 
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "public")));

@@ -19,9 +19,7 @@ router.post('/register', async (req, res) => {
       password: Password,
       score: 0,
     });
-    // console.log(user);
     res.app.locals.user = user;
-
     res.redirect('/');
   } catch (error) {
     res.status(500).json({ error: error.message });
