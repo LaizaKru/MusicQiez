@@ -3,7 +3,7 @@ const Layout = require("./Layout");
 
 function Themes({ themes,user }) {
   return (
-    <Layout>
+    <Layout user={user}>
       <h1 style={{ textAlign: "center", margin: "50px" }}>
         Выбери тему и кайфуй
       </h1>

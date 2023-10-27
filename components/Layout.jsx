@@ -21,6 +21,7 @@ module.exports = function Layout({ title, children, user}) {
       </head>
       <Header user = {user} />
       <body>{children}</body>
+      
     </html>
   );
 };
