@@ -1,6 +1,9 @@
 const React = require("react");
 const Layout = require("./Layout");
+
 function Main({ title, user }) {
+
+
   return (
     <Layout title={title} user={user}>
       <link href="/stylesMain.css" rel="stylesheet" />
