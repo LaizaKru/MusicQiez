@@ -1,7 +1,7 @@
 const React = require('react');
 const Layout = require('./Layout');
 // const ReactDOM = require('react-dom');
-function Register({ title }) {
+function Register() {
   return (
     <Layout>
       <section className="vh-100">
@@ -18,7 +18,7 @@ function Register({ title }) {
                       <form
                         className="mx-1 mx-md-4"
                         action="/register"
-                        method="post"
+                        method="POST"
                       >
                         <div className="d-flex flex-row align-items-center mb-4">
                           <i className="fas fa-user fa-lg me-3 fa-fw"></i>
@@ -27,8 +27,9 @@ function Register({ title }) {
                               type="text"
                               id="form3Example1c"
                               className="form-control"
+                              name="Login"
                             />
-                            <label className="form-label" for="form3Example1c">
+                            <label className="form-label" htmlFor="form3Example1c" >
                               Login
                             </label>
                           </div>
@@ -40,15 +41,16 @@ function Register({ title }) {
                               type="password"
                               id="form3Example4c"
                               className="form-control"
+                              name="Password"
                             />
-                            <label className="form-label" for="form3Example4c">
+                            <label className="form-label" htmlFor="form3Example4c" >
                               Password
                             </label>
                           </div>
                         </div>
                         <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                           <button
-                            type="button"
+                            type="submit"
                             className="btn btn-primary btn-lg"
                           >
                             Register
