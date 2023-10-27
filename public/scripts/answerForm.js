@@ -29,7 +29,7 @@ if (form) {
         const href = `/game?themeId=${themeId}&questionIndex=${
           parseInt(currentIndex) + 1
         }`;
-        const link = `<a href='${href}' className="btn btn-danger mb-2" style={{background:"#a44e6b", borderColor:"#a44e6b"}}><h2>Cледующий вопрос</h2></a> `;
+        const link = `<a href='${href}' className="btn btn-danger ss mb-2"><h2 style={{color:'white', borderColor:"#a44e6b,  text-decoration: none"}}>Cледующий вопрос</h2></a> `;
         if (data.correct) {
           resultEl.innerHTML = `Правильный ответ! Ваш счет: ${data.score} ${link}`;
         } else {
