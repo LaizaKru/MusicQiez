@@ -18,7 +18,7 @@ function Themes({ themes }) {
           justifyContent: "space-between",
         }}
       >
-        {themes.map((theme, index) => (
+        {themes.map((theme) => (
           <div
             className="d-flex flex-column align-items-center mb-4"
             style={{ height: "400px" }}
