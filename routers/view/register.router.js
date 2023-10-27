@@ -20,7 +20,7 @@ router.post('/register', async (req, res) => {
       score: 0,
     });
     res.app.locals.user = user;
-    res.redirect('/');
+    res.redirect('/themes');
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
