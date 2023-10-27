@@ -1,9 +1,7 @@
+const React = require("react");
+const Header = require("./Header");
 
-const React = require('react');
-const Header = require('./Header')
-
-module.exports = function Layout({ title, children, user}) {
-
+module.exports = function Layout({ title, children, user }) {
   return (
     <html lang="en">
       <head>
@@ -15,13 +13,12 @@ module.exports = function Layout({ title, children, user}) {
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossOrigin="anonymous"
         />
-        <link href="/stylesNavBar.css" rel="stylesheet" />
         <link href="/styles/style.css" rel="stylesheet" />
+        {/* <link href="/music/" rel="stylesheet" /> */}
         <script defer src="/scripts/answerForm.js" />
       </head>
-      <Header user = {user} />
+      <Header user={user} />
       <body>{children}</body>
-      
     </html>
   );
 };

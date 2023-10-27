@@ -11,7 +11,8 @@ router.post("/:questionId/check", async (req, res) => {
       question.answer == req.body.answer
     );
     if (question) {
-      const correct = question.answer == req.body.answer; // в боди будет, что пользователь отправит через фетч
+      const correct =
+        question.answer.toLowerCase() == req.body.answer.toLowerCase(); // в боди будет, что пользователь отправит через фетч
       if (correct) {
         res.app.locals.user.score += 1;
         await res.app.locals.user.save();
