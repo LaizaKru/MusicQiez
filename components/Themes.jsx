@@ -1,9 +1,9 @@
 const React = require("react");
 const Layout = require("./Layout");
 
-function Themes({ themes }) {
+function Themes({ themes,user }) {
   return (
-    <Layout>
+    <Layout user={user}>
       <h1>Выбери тему и кайфуй</h1>
       <p>
         {themes.map((theme, index) => (
