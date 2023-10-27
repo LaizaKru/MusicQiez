@@ -12,9 +12,6 @@ function Header({ user }) {
           Привет,&nbsp;{user.login}! &nbsp;score:{user.score}
         </li>
       )}
-      <a className="navbar-brand" href="/register">
-        Регистрация
-      </a>
     </nav>
   );
 }

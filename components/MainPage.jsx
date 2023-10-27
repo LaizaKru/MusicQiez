@@ -1,11 +1,11 @@
 const React = require("react");
 const Layout = require("./Layout");
 
-function Main({ title, user }) {
+function Main({ title }) {
 
 
   return (
-    <Layout title={title} user={user}>
+    <Layout title={title}>
       <link href="/stylesMain.css" rel="stylesheet" />
       <div className="main_page">
         <header className="jumbotron text-center">
