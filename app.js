@@ -1,10 +1,6 @@
 require("@babel/register");
 const express = require("express");
 const path = require("path");
-const authRouter = require("./routers/view/register.router.js");
-const ssr = require("./middleware/ssr");
-const main = require("./routers/view/main.router.js");
-
 const app = express();
 // const indexroutes = require("./routers/index.routes");
 // const parsers = require("body-parser");
@@ -13,12 +9,14 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "public")));
+const ssr = require("./middleware/ssr");
 app.use(ssr);
+const main = require("./routers/view/main.router.js");
 app.use("/", main);
-
+const authRouter = require("./routers/view/register.router.js");
 app.use("/", authRouter);
 
-const PORT = 3000;
+const PORT = 4000;
 
 // app.use("/", indexroddutes);
 
