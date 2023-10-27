@@ -12,7 +12,7 @@ function Header({ user }) {
           Привет,&nbsp;{user.login}! &nbsp;score:{user.score}
         </li>
       )}
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand" href="/register">
         Зарегистрироваться
       </a>
           <div className="video-background">
