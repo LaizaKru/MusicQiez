@@ -1,14 +1,30 @@
 const router = require('express').Router();
 const Register = require('../../components/Register');
-
+const { User } = require('../../db/models');
 router.get('/register', (req, res) => {
   try {
-    console.log('ya utu');
     const html = res.renderComponent(Register, {});
-    console.log(html);
     res.send(html);
   } catch (error) {
     res.status(500).send(error.message);
+  }
+});
+router.post('/register', async (req, res) => {
+  try {
+    console.log(req.body);
+    const { Login, Password} = req.body;
+    console.log(Login);
+    const user = await User.create({
+      login:Login,
+      password:Password,
+      score:0
+    });
+    // console.log(user);
+    res.app.locals.user = user;
+
+    res.render('/register');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
 });
 
