@@ -1,1 +1,14 @@
-module.exports = [{title: 'RAP', img:'https://yt3.googleusercontent.com/ytc/AGIKgqNlrLkqUpWGWmN38UE3mo29WPFq17xc_2nCBn1b=s900-c-k-c0x00ffffff-no-rj'},{title:'Russians народные', img:'https://1.bp.blogspot.com/-BQt4wMABOYk/T8HR9xJfhKI/AAAAAAAAIN8/ZMlC9ea1IeI/s1600/buranovskiebabushki_04.jpg'},{title: 'Rock', img:'https://ntv-static.cdnvideo.ru/home/news/20141006/cc_vs.jpg'}]
+module.exports = [
+  {
+    title: "RAP",
+    img: "https://socialsafrica.com/wp-content/uploads/avatars/1607/5e577fc07c233-bpfull.jpg",
+  },
+  {
+    title: "Russians народные",
+    img: "https://sun1-23.userapi.com/s/v1/if2/9QnQ09KKPXn2RuZf4vzfMl3y0o6FMyo4sJib9ytEw_gPw0lCaR-NO7WemeAcpXJLW_m1mpZzn1P1VLP6Ckg5mhO-.jpg?size=300x300&quality=96&crop=99,37,300,300&ava=1",
+  },
+  {
+    title: "Rock",
+    img: "https://fotouser.miarroba.st/59d57d6b/300/rainmaker_xxx.jpg",
+  },
+];
