@@ -6,6 +6,7 @@ const app = express();
 // const parsers = require("body-parser");
 // app.use(parsers.json());
 
+app.locals.user = 'Лиза'; 
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "public")));
@@ -15,7 +16,6 @@ const main = require("./routers/view/main.router.js");
 app.use("/", main);
 const authRouter = require("./routers/view/register.router.js");
 app.use("/", authRouter);
-
 const PORT = 4000;
 
 // app.use("/", indexroddutes);
