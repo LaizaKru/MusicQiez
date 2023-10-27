@@ -1,7 +1,7 @@
 const React = require("react");
 const Layout = require("./Layout");
 
-function Themes({ themes }) {
+function Themes({ themes,user }) {
   return (
     <Layout>
       <h1 style={{ textAlign: "center", margin: "50px" }}>

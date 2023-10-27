@@ -1,9 +1,9 @@
 const React = require('react');
 const Layout = require('./Layout');
 // const ReactDOM = require('react-dom');
-function Register() {
+function Register({user}) {
   return (
-    <Layout>
+    <Layout user={user}>
       <section className="vh-100">
         <div className="container h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
