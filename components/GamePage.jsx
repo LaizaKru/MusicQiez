@@ -8,10 +8,10 @@ function GamePage({title, question}){
     }
     return (
         <Layout><div className='container p-2' id = "game">
-     <h1 class="display-6">{question.question}</h1>
+     <h1 className="display-6">{question.question}</h1>
      {question.question_img && (<img src={question.question_img} />)}
      <form id="answerForm" data-questionId={question.id}>
-  <div class="mb-3">
+  <div className="mb-3">
     <label for="exampleInputEmail1" class="form-label">Ваш ответ</label>
     <input type="text" name="answer" class="form-control" id="exampleInputEmail1" required/>
   </div>
