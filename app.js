@@ -27,7 +27,6 @@ app.use("/themes", themes);
 
 app.use("/", authRouter);
 
-
 app.use("/game", game);
 
 app.use("/question", question);
