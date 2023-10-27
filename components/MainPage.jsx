@@ -2,8 +2,6 @@ const React = require("react");
 const Layout = require("./Layout");
 
 function Main({ title }) {
-
-
   return (
     <Layout title={title}>
       <link href="/stylesMain.css" rel="stylesheet" />
@@ -14,11 +12,11 @@ function Main({ title }) {
 
         <section className="container text-center">
           <a
-            href="/register"
+            href="/themes"
             className="btn btn-danger mb-2"
             style={{ background: "b", borderColor: "#a44e6b", color: "black" }}
           >
-            <h2>Зарегестрируйтесь, чтобы начать игру</h2>
+            <h2>Угадываем музыку</h2>
           </a>
           <p>
             Желаем удачи и надеемся, что наш квиз принесет вам много
