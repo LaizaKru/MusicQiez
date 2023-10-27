@@ -1,7 +1,9 @@
+
 const React = require('react');
 const Layout = require('./Layout');
 
 function Main({ title,user }) {
+
   return (
     <Layout title={title} user={user}>
       <link href="/stylesMain.css" rel="stylesheet" />
@@ -17,11 +19,13 @@ function Main({ title,user }) {
           style={{ marginTop: '10%' }}
         >
           <a
-            href="/register"
-            className="btn mb-2 btn-header "
-            style={{ background: 'b', borderColor: '#a44e6b', color: 'black' }}
+
+            href="/themes"
+            className="btn mb-2 btn-header"
+            style={{ background: "b", borderColor: "#a44e6b", color: "black" }}
+
           >
-            <h2>Зарегестрируйтесь, чтобы начать игру</h2>
+            <h2>Угадываем музыку</h2>
           </a>
           <p className="p-header">
             Желаем удачи и надеемся, что наш квиз принесет вам много
