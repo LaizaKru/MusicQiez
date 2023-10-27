@@ -34,7 +34,10 @@ function Themes({ themes }) {
               </div>
               <h5 className="card-title">Тема: {theme.title}</h5>
 
-              <a href={`/themes/${theme.id}`} className="btn btn-primary">
+              <a
+                href={`/game?themeId=${theme.id}&questionIndex=0`}
+                className="btn btn-primary"
+              >
                 Клик тута
               </a>
             </div>
