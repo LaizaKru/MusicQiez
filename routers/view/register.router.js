@@ -11,18 +11,18 @@ router.get('/register', (req, res) => {
 });
 router.post('/register', async (req, res) => {
   try {
-    console.log(req.body);
-    const { Login, Password} = req.body;
-    console.log(Login);
+    // console.log(req.body);
+    const { Login, Password } = req.body;
+    // console.log(Login);
     const user = await User.create({
-      login:Login,
-      password:Password,
-      score:0
+      login: Login,
+      password: Password,
+      score: 0,
     });
     // console.log(user);
     res.app.locals.user = user;
 
-    res.render('/register');
+    res.redirect('/');
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
