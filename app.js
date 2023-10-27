@@ -10,14 +10,12 @@ const game = require("./routers/view/gamePage.js");
 const question = require("./routers/api/question.js");
 
 const themes = require("./routers/view/themes.router.js");
-
-
+const parsers = require("body-parser");
 
 const app = express();
 
-
 app.use(express.urlencoded({ extended: true }));
-
+app.use(parsers.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(ssr);
@@ -31,9 +29,7 @@ app.use("/game", game);
 
 app.use("/question", question);
 
-const PORT = 3000;
-
-
+const PORT = 4000;
 
 app.listen(PORT, () => {
   console.log("Орлы летят на 3000 серваке!");

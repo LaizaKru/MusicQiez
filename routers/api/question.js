@@ -5,6 +5,11 @@ router.post("/:questionId/check", async (req, res) => {
   try {
     const { questionId } = req.params;
     const question = await Question.findOne({ where: { id: questionId } });
+    console.log(
+      question.answer,
+      req.body.answer,
+      question.answer == req.body.answer
+    );
     if (question) {
       const correct = question.answer == req.body.answer; // в боди будет, что пользователь отправит через фетч
       if (correct) {
