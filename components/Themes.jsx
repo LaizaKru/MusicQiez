@@ -11,7 +11,7 @@ function Themes({ themes }) {
         style={{
           display: "flex",
           flexWrap: "wrap",
-
+          height: "100px",
           width: "900px",
           margin: "0 auto",
           alignItems: "center",
@@ -19,14 +19,22 @@ function Themes({ themes }) {
         }}
       >
         {themes.map((theme, index) => (
-          <div className="d-flex flex-column align-items-center mb-4">
-            <div className="card " style={{ width: "18rem" }}>
-              <div class="card-body">
-                <img class="card-img-top" src={theme.img} alt={theme.title} />
+          <div
+            className="d-flex flex-column align-items-center mb-4"
+            style={{ height: "400px" }}
+          >
+            <div className="card " style={{ width: "18rem", height: "100%" }}>
+              <div className="card-body">
+                <img
+                  className="card-img-top"
+                  style={{ height: "300px" }}
+                  src={theme.img}
+                  alt={theme.title}
+                />
               </div>
-              <h5 class="card-title">Тема: {theme.title}</h5>
+              <h5 className="card-title">Тема: {theme.title}</h5>
 
-              <a href={`/themes/${theme.id}`} class="btn btn-primary">
+              <a href={`/themes/${theme.id}`} className="btn btn-primary">
                 Клик тута
               </a>
             </div>
@@ -37,14 +45,3 @@ function Themes({ themes }) {
   );
 }
 module.exports = Themes;
-
-{
-  /* <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div> */
-}
