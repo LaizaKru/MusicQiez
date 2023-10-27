@@ -1,5 +1,6 @@
 const React = require("react");
 const Layout = require("./Layout");
+const NavBar = require("./NavBar");
 function Main({ title }) {
   return (
     <Layout title={title}>
